@@ -10,6 +10,13 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.ccs$/,
+        use: [ 
+          'css-loader',
+          'style-loader'
+        ]
+      },
+      {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/
